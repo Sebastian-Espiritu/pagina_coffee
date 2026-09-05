@@ -1,6 +1,10 @@
 :root{
+    --color-principal:#613e3e;
+    --color-fondo-principal:#ffffff;
+    --verde: #b0d225;
+    --naranja: #da3d07;
+    --gris: #ac9c83;
 
-    
 }
 
 body {
