@@ -7,8 +7,81 @@
 
 }
 
+/* Selectores de tipo etiqueta HTML */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: var(--fuente1);
+    font-size: 14px;
+    line-height: 1.8;
 }
+/* Selectores de tipo ID */
+#nosotros{
+    background-color: var(--color-fondo-nosotros);
+    color: var(--color-texto);
+}
+
+#servicios {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+#menu{
+    background-color: var(--color-fondo-menu);
+}
+
+#contacto{
+    background-color: var(--color-fondo-contacto);
+    color: var(--color-texto);
+}
+
+#pie {
+    background-color: var(--color-fondo-pie);
+    color: var(--color-texto-pie);
+}
+
+/* Selectores de tipo class(clase)  */
+.container{
+    max-width: 70%;
+    margin: auto;
+}
+
+.padding-xl {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.padding-xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Flexbox: Alineacion flexible de la fila*/
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*ajuste del ancho al tamaño de la caja padre*/
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+Colors_Text_design {
+    color1: #1d5880;
+    color2: #f1f1f1;
+
+}
+
+/*barra de navegacion*/
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-ancho{
+    width: 200px;
+}
+
