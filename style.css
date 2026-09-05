@@ -12,30 +12,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
-bottom {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-
-Colors_Text_design {
-    color1: #1d5880;
-    color2: #f1f1f1;
-
-}
