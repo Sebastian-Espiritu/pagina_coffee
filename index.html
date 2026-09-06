@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Cafeteria GAAA</title>
 </head>
 
 <body>
 
     <!--ENCABEZADO-->
-    <header>
+    <header class="row">
         <h1> Cafeteria GAAA</h1>
         <nav>
-            <a href=""#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#menu">Menú</a>
-            <a href="#contacto">Contacto</a>
+            <a class="enlace" href=""#inicio" class="enlace">Inicio</a>
+            <a class="enlace" href="#nosotros" class="enlace">Nosotros</a>
+            <a class="enlace" href="#menu" class="enlace">Menú</a>
+            <a class="enlace" href="#contacto" class="enlace">Contacto</a>
         </nav>
     </header>
 
@@ -41,27 +45,117 @@
             <p>Nuestro objetivo es crear un espacio comodo y agradable donde puedas disfrutar de tus bebidas favoritas.</p>
         </section>
     <!--MENÚ-->
-        <section id="menu">
-            <h2>Nuestro Menú</h2>
-            <h3>Café</h3>
-            <ul>
-                <li>Café Americano</li>
-                <li>Café con Leche</li>
-                <li>Capuccino</li>
-                <li>Espresso</li>
-            </ul>
-            <h3>Postres</h3>
-            <ul>
-                <li>Tarta de Chocolate</li>
-                <li> Cheesecake</li>
-                <li>Brownie</li>
-            </ul>
-            <h3>Sándwiches</h3>
-            <ul>
-                <li>Sándwich de Jamón y Queso</li>
-                <li>Sándwich de Pollo</li>
-                <li>Sándwich de Atún</li>
-            </ul>
+        <section id="menu" class="padding-xl">
+            <div class="container">
+                <h2>Nuestro Menu</h2>
+
+                <!-- Alineación flexible de los elementos -->
+                <div class="row">
+                    <!-- Columna 1 -->
+                    <h3>Cafes</h3>
+                    <div>
+                        <!-- Tarjeta 1 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Cafe americano</h3>
+                            <p>Lorem ?</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna 2 -->
+                    <div>
+                        <!-- Tarjeta 2 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Cafe con leche</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur ?</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna 3 -->
+                    <div>
+                        <!-- Tarjeta 3 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Capuccino</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing?</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna 4 -->
+                    <div>
+                        <!-- Tarjeta 4 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Espresso</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Columna 5 -->
+                    <h3>Postres</h3>
+                    <div>
+                        <!-- Tarjeta 5 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Torta de chocolate</h3>
+                            <p>Lorem ?</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna 6 -->
+                    <div>
+                        <!-- Tarjeta 6 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Cheesecake</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur ?</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna 7 -->
+                    <div>
+                        <!-- Tarjeta 7 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Brownie</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Columna 8 -->
+                    <h3>Sandwiches</h3>
+                    <div>
+                        <!-- Tarjeta 8 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Sándwich de Jamón y Queso</h3>
+                            <p>Lorem ?</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna 9 -->
+                    <div>
+                        <!-- Tarjeta 9 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Sándwich de Pollo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur ?</p>
+                        </div>
+                    </div>
+
+                    <!-- Columna 10 -->
+                    <div>
+                        <!-- Tarjeta 10 -->
+                        <div>
+                            <img class="img-fluid" src="./Imagenes/Cafe americano.jpg" alt="">
+                            <h3>Sándwich de Atún</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing?</p>
+                        </div>
+                    </div>
+                </div>
         </section>
     <hr>
     <!--CONTACTO-->

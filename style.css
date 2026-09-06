@@ -7,15 +7,19 @@
     --fuente1: 'Mitr', sans-serif;
 }
 
-h1,h2,h3{
+h1,h2{
     font-weight: 300;
+}
+h3{
+    font-weight: 300;
+    margin-top: 0px; 
+    margin-bottom: 5px; 
 }
 /* Selectores de tipo etiqueta HTML */
 body {
     font-family: var(--fuente1);
     font-size: 14px;
     line-height: 1.8;
-    font-weight: 300;
 }
 
 /* Selectores de tipo ID */
@@ -50,7 +54,7 @@ body {
 }
 
 .padding-xl {
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 90px;
 }
 
@@ -64,22 +68,15 @@ body {
 }
 /*Flexbox: Alineacion flexible de la fila*/
 .row{
-    display: flex;
-    flex-direction: row;
+    display: flex;  /* Activa flexbox */
+    flex-direction: row; /* Orientación en fila */
     gap: 20px;
-    justify-content: space-between;
 }
 
 /*ajuste del ancho al tamaño de la caja padre*/
 .img-fluid{
     width: 100%;
     height: auto;
-}
-
-Colors_Text_design {
-    color1: #1d5880;
-    color2: #f1f1f1;
-
 }
 
 /*barra de navegacion*/
