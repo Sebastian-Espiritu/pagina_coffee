@@ -1,0 +1,175 @@
+:root{
+    --color-principal:#613e3e;
+    --color-fondo-principal:#ffffff;
+    --verde: #b0d225;
+    --naranja: #da3d07;
+    --gris: #ac9c83;
+    --fuente1: 'Mitr', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h1,h2{
+    font-weight: 300;
+}
+h3{
+    font-weight: 300;
+    margin-top: 0px; 
+    margin-bottom: 5px; 
+}
+/* Selectores de tipo etiqueta HTML */
+body {
+    font-family: var(--fuente1);
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+    color: var(--color-principal);
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--color-fondo-principal);
+    border-bottom: 2px solid var(--gris);
+}
+
+header h1 {
+    color: var(--color-fondo-principal);
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+header nav .enlace {
+    font-weight: 500;
+}
+/* Selectores de tipo ID */
+#inicio{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#inicio img {
+    max-height: 350px;
+    margin-bottom: 20px;
+}
+#nosotros{
+    background-color: var(--color-fondo-nosotros);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#menu{
+    background-color: var(--color-fondo-principal);
+}
+
+#equipo {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-principal);
+    text-align: center;
+}
+
+#testimonios {
+    background-color: var(--gris);
+    color: var(--color-fondo-principal);
+    text-align: center;
+}
+
+#galeria {
+    text-align: center;
+    background-color: var(--color-fondo-principal);
+}
+
+#contacto{
+    background-color: var(--color-fondo-contacto);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#servicios {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+#pie {
+    background-color: var(--color-fondo-pie);
+    color: var(--color-texto-pie);
+    text-align: center;
+    padding: 25px;
+}
+
+#pie nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#pie .enlace {
+    color: var(--color-fondo-principal);
+}
+
+/* Selectores de tipo class(clase)  */
+.container{
+    max-width: 70%;
+    margin: auto;
+}
+
+.padding-xl {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.padding-xs {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.enlace{
+    color: var(--color-principal);
+    text-decoration: none;
+}
+/*Flexbox: Alineacion flexible de la fila*/
+.row{
+    display: flex;  /* Activa flexbox */
+    flex-direction: row; /* Orientación en fila */
+    gap: 20px;
+}
+
+/*ajuste del ancho al tamaño de la caja padre*/
+.img-fluid{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/*barra de navegacion*/
+button {
+    background-color: var(--naranja);
+    color: var(--color-fondo-principal);
+    border: none;
+    padding: 12px 28px;
+    font-family: var(--fuente1);
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-ancho{
+    width: 200px;
+}
+
+.video_pagina_coffee {
+    max-width: 800px;
+    width: 100%;
+    border-radius: 6px;
+}
