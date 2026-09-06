@@ -32,11 +32,6 @@ body {
     margin: 0;
     color: var(--color-principal);
 }
-h3{
-    font-weight: 300;
-    margin-top: 0px; 
-    margin-bottom: 5px; 
-}
 
 /* Selectores de tipo ID */
 #inicio{
