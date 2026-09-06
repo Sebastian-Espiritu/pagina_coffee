@@ -76,7 +76,7 @@ h3{
 
 /* Selectores de tipo class(clase)  */
 .container{
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -110,7 +110,7 @@ h3{
 }
 .img_menu {
     height: 264px;
-    witdh: 200px;
+    max-width: 250px;
 }
 .inicio_img {
     max-height: 400px;
@@ -158,7 +158,7 @@ h3{
     width: 200px;
 }
 .seccion_menu {
-    margin: 25px 0;
+    margin: 25px auto;
 }
 
 .video_pagina_coffee {
