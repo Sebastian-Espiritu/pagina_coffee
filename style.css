@@ -4,15 +4,20 @@
     --verde: #b0d225;
     --naranja: #da3d07;
     --gris: #ac9c83;
-
+    --fuente1: 'Mitr', sans-serif;
 }
 
+h1,h2,h3{
+    font-weight: 300;
+}
 /* Selectores de tipo etiqueta HTML */
 body {
     font-family: var(--fuente1);
     font-size: 14px;
     line-height: 1.8;
+    font-weight: 300;
 }
+
 /* Selectores de tipo ID */
 #nosotros{
     background-color: var(--color-fondo-nosotros);
@@ -53,12 +58,16 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+.enlace{
+    color: var(--color-principal);
+    text-decoration: none;
+}
 /*Flexbox: Alineacion flexible de la fila*/
 .row{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: space-between;
 }
 
 /*ajuste del ancho al tamaño de la caja padre*/
