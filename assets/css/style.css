@@ -83,7 +83,7 @@ body {
 
 /* Selectores de tipo class(clase)  */
 .container{
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -107,6 +107,7 @@ body {
     display: flex;  /* Activa flexbox */
     flex-direction: row; /* Orientación en fila */
     gap: 20px;
+    justify-content: center;
 }
 
 /*ajuste del ancho al tamaño de la caja padre*/
@@ -118,6 +119,9 @@ body {
 .img_menu {
     height: 264px;
     max-width: 250px;
+}
+.caja_servicios_menu {
+    width: 80%;
 }
 .inicio_img {
     max-height: 400px;
@@ -182,4 +186,7 @@ body {
 }
 .comentario {
     color: var(--color-principal);
+}
+.tarjeta_menu {
+    width: 250px;
 }
