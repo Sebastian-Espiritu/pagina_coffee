@@ -138,6 +138,17 @@ body {
 .navegacion {
     display: flex;
     gap: 25px;
+    border-radius: 4px;
+}
+.navegacion a {
+    display: inline-block;  /*convierte el texto en caja */
+    padding: 8px 10px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;  /*efecto de transicion suave*/
+}
+.navegacion a:hover{
+    background-color: var(--naranja);
+    color: var(--color-fondo-principal)
 }
 .titulo_grueso{
     font-weight: 500;
@@ -166,7 +177,7 @@ body {
 }
 
 .logo-ancho{
-    width: 200px;
+    width: 100px;
 }
 .seccion_menu {
     margin: 25px auto;
@@ -189,4 +200,17 @@ body {
 }
 .tarjeta_menu {
     width: 250px;
+}
+
+/* Redes sociales en el pie de página */
+.footer-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-rs a{
+    color: var(--color-fondo-principal);
+    text-decoration: none;
+    
 }
