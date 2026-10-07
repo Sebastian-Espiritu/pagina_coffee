@@ -130,8 +130,14 @@ img,video,iframe{
 }
 
 /*ajuste del ancho al tamaño de la caja padre*/
-.img-fluid{
+.img-fluid .img_menu {
     width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.img-fluid .inicio_img {
+    width: 60%;
     height: auto;
     border-radius: 4px;
 }
