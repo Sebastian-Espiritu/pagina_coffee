@@ -35,6 +35,14 @@
 
     <!--PAGINA PRINCIPAL-->
     <main>
+        <!-- Video de portada -->
+        <section id="video_portada">
+            <!-- Objeto video -->
+            <video class="video-fluid" autoplay muted loop> 
+                <source src="./assets/video/arte_cappuccino.mp4" type="video/mp4">
+            </video>
+        </section>
+
         <!--INICIO-->
         <section id="inicio">
             <img class="img-fluid inicio_img" src="./assets/img/img_interior_cafeteria.jpg" alt="Interior de la cafetería">
@@ -216,7 +224,67 @@
                 <p><strong>Email:</strong> info@cafeteriagaaa.com</p>
             </div>
         </section>
+        <!-- Lista de precio -->
+        <section id="precio" class="padding-xl">
+            <div class="container">
+                <h2>Lista de Precios del servicios</h2>
+                <!-- Objeto de tabla -->
+                <table class="tbl-precios">
+                    <!-- Cabecera de la tabla -->
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio <sup>*</sup></th>
+                        </tr>
+                    </thead>
+                    <!-- Cuerpo de la tabla -->
+                    <tbody>
+                        <tr>
+                            <td>Café Americano</td>
+                            <td>Café preparado con agua caliente y espresso</td>
+                            <td>$2.50</td>
+                        </tr>
+                        <tr>
+                            <td>Café con Leche</td>
+                            <td>Café preparado con leche caliente y espresso</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Café Latte</td>
+                            <td>Café preparado con leche vaporizada y espresso</td>
+                            <td>$3.50</td>
+                        </tr>
+                    </tbody>
+                    <!-- Pie de la tabla -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">(*) Precio sujeto a cambios sin previo aviso</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <!-- Video promocional -->
+        <section id="promocion" class="padding-xl">
+            <div class="container">
+                <h2>Promociones del mes</h2>
+                <div class="promocion-flex">
+                    <article>
+                        <h3>Oferta por primavera</h3>
+                        <p>Promocion de primavera con descuentos especiales y ademas una demostracion de preparacion de nuestros productos</p>
+                        <a href="#">Ver más</a>
+                    </article>
+                    
+                    <article>
+                        <iframe class="video-fluid" width="560" height="315" src="https://www.youtube.com/embed/DBEIfYc2C3A?si=Q9MhwKIfQ_AiltOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
+    
+
     <!-- Pie de pagina -->
     <footer class="padding-xs" id="pie">
         <div class="container">

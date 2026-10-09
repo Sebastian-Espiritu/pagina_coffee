@@ -6,6 +6,8 @@
     --naranja02: #F7931E;
     --gris: #ac9c83;
     --fuente1: 'Mitr', sans-serif;
+    --color-borde-tabla: #f7a439;
+    --color-fondo-promocion: #ff9914;
 }
 * {
     box-sizing: border-box;
@@ -31,6 +33,11 @@ body {
     line-height: 1.8;
     margin: 0;
     color: var(--color-principal);
+}
+
+/* Eliminar los espacios inferiores que aparecen debajo del objeto */
+img,video,iframe{
+    display: block;
 }
 /* Selectores de tipo ID */
 #inicio{
@@ -70,6 +77,18 @@ body {
 #contacto{
     background-color: var(--naranja02);
     color: var(--color-principal);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#precio{
+    background-color: var(--color-fondo-principal);
+    color: var(--color-principal);
+}
+
+#promocion{
+    background-color: var(--color-fondo-promocion);
+    color: var(--color-fondo-principal);
     text-align: center;
     padding: 50px 20px;
 }
@@ -187,6 +206,7 @@ body {
     max-width: 800px;
     width: 100%;
     border-radius: 6px;
+    margin: 0 auto;
 }
 .fondo_contacto {
     background-color: var(--color-fondo-principal);
@@ -213,4 +233,68 @@ body {
     color: var(--color-fondo-principal);
     text-decoration: none;
     
+}
+/* Semana 7 contenido */
+.tbl-precios {
+    width: 100%;
+    border-collapse: collapse; /*combina los bordes */
+}
+
+.tbl-precios th,
+.tbl-precios td{
+    border: 1px solid var(--color-borde-tabla);
+    padding: 15px;
+
+}   
+
+.tbl-precios thead{
+    background-color: var(--naranja02);
+    color: var(--color-fondo-principal);
+    text-transform: uppercase;
+}
+
+.tbl-precios tfoot{
+    text-align: right;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.tbl-precios tbody td:nth-child(2){
+    text-align: center;
+}
+
+.tbl-precios tbody td:nth-child(3){
+    text-align: right;
+}
+
+.video-fluid{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.promocion-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.promocion-flex article{
+    flex: 1;/* ancho de las columnas */
+}
+
+.promocion-flex h3{
+    text-transform: uppercase;
+}
+
+.promocion-flex a {
+    display: inline-block;  /*convierte el texto en caja */
+    padding: 8px 10px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;  /*efecto de transicion suave*/
+    text-decoration: none;
+    color: var(--color-principal)
+}
+.promocion-flex a:hover{
+    background-color: var(--color-fondo-principal);
 }
