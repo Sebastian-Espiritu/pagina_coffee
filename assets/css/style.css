@@ -40,6 +40,27 @@ img,video,iframe{
     display: block;
 }
 /* Selectores de tipo ID */
+#top-bar {
+    background-color:var(--color-borde-tabla);
+    color: var(--color-fondo-principal);
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+#cabecera {
+    position: sticky;
+    top: 0px;
+    background-color: var(--color-fondo-principal);
+    color: var(--color-principal);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+}
+
+#video_portada {
+    /* Controlar la posición de las cajas hijo dentro de la caja padre */
+    position: relative;
+}
+
 #inicio{
     text-align: center;
     padding-bottom: 50px;
@@ -55,6 +76,11 @@ img,video,iframe{
 #servicios_menu {
     background-color: var(--color-principal);
     color: var(--color-fondo-principal);
+}
+
+#citas {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-principal);
 }
 
 #equipo {
@@ -146,7 +172,7 @@ img,video,iframe{
     max-width: 250px;
 }
 .caja_servicios_menu {
-    width: 80%;
+    width: 80%; 
 }
 .inicio_img {
     max-height: 400px;
@@ -240,6 +266,7 @@ img,video,iframe{
     text-decoration: none;
     
 }
+
 /* Semana 7 contenido */
 .tbl-precios {
     width: 100%;
@@ -303,4 +330,106 @@ img,video,iframe{
 }
 .promocion-flex a:hover{
     background-color: var(--color-fondo-principal);
+}
+.form-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*Permite cajas flexbox hijo en multiples filas */
+    gap: 20px; /*Espacio entre cajas flexbox hijo */
+}
+
+.form-col-50 {
+    flex: 48%;
+}
+
+.form-col-100 {
+    flex: 100%;
+}
+
+.form-control {
+    width: 100%;
+    font: inherit; /* Hereda la fuente del body*/
+    padding: 10px 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-principal);
+}
+
+.form-link {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-submit {
+    background-color:var(--naranja);
+    color: var(--color-fondo-principal);
+    border: none;
+    padding: 10px 30px;
+    font: inherit;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.form-submit:hover {
+    background-color: var(--naranja02);
+}
+
+.fom-noresize {
+    resize: none;
+}
+
+.top-bar-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.top-bar-flex a {
+    color: var(--color-fondo-principal);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;  /*efecto de transicion suave*/
+}
+
+.top-bar-flex a:hover {
+    color: var(--naranja);
+}
+
+.top-contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.portada-texto {
+    /*Permite posicionar la caja hijo dentro de la caja padre*/
+    position:absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 520px;
+    background-color:rgba(0,0,0,0.5);
+    color: var(--color-fondo-principal);
+    padding: 25px;
+}
+
+.portada-texto h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.portada-texto p {
+    font-size: 18px;
+}
+
+.portada-texto a {
+    display: inline-block;
+    background-color: var(--naranja);
+    color: var(--color-fondo-principal);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
 }

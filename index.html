@@ -15,9 +15,49 @@
 </head>
 
 <body>
+    <!-- Barra superior (top-bar) -->
+    <header id="top-bar">
+        <div class="container">
+            <!--Flexbox del top-bar -->
+            <div class="top-bar-flex">
+                <!-- Contactos-->
+                <div class="top-contacto">
+
+                    <!--Telefono-->
+                    <a href="tel:+51987654321">
+                        <i class="fa-solid fa-phone"></i>
+                        (+51) 987-654-321
+                    </a>
+
+                    <!--Correo electrónico-->
+                    <a href="mailto:info@cafeteria.com.pe&subject=Necesito información">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@cafeteria.com.pe
+                    </a>
+                </div>
+
+                <!-- Redes sociales-->
+                <div class="top-rs">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <i class="fa-brands fa-tiktok fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
     <!--ENCABEZADO-->
-    <header class="row encabezado">
+    <header id="cabecera " class="row encabezado">
         <!-- Logo -->
         <div class="logo-ancho">
             <a href="index.html" title="Inicio">
@@ -41,6 +81,13 @@
             <video class="video-fluid" autoplay muted loop> 
                 <source src="./assets/video/arte_cappuccino.mp4" type="video/mp4">
             </video>
+
+            <div class="portada-texto">
+                <h1> Coffee Art</h1>
+                <p>Disfruta de la experiencia de un café único</p>
+                <a href="#">Reserva tu mesa</a>
+
+            </div>
         </section>
 
         <!--INICIO-->
@@ -171,6 +218,91 @@
                 </div>
             </div>
         </section>
+
+
+    <!--Registro de Reservación-->
+    <section id="citas" class="padding-xl">
+        <div class="container">
+            <h2>Registro de Reservacion</h2>
+
+            <!--Objero formulario -->
+            <form action="grabar_reserva.php" method="post">
+                <div class="form-flex">
+
+                    <!-- Campo nombre completo-->
+                    <div class="form-col-100">
+                        <input class="form-control" type="text" placeholder="Nombre y Apellidos completos" required>
+                    </div>
+
+                    <!-- Campo correo electrónico-->
+                    <div class="form-col-50">
+                        <input class="form-control" type="email" placeholder="Correo electrónico" required>
+                    </div>
+
+                    <!-- Campo teléfono -->
+                    <div class="form-col-50">
+                        <input class="form-control" type="tel" placeholder="Teléfono" required>
+                    </div>
+
+                    <!-- Campo de la Fecha-->
+                     <div class="form-col-50">
+                        <input class="form-control" type="date" placeholder="Fecha de la cita" required>
+                    </div>
+
+                    <!-- Hora de la cita -->
+                     <div class="form-col-50">
+                        <input class="form-control" type="time" placeholder="Hora de la cita" required>
+                    </div>
+
+                    <!-- Campo de Número de Personas -->
+                    <div class="form-col-50">
+                        <input class="form-control" type="" placeholder="Número de Personas" required>
+                    </div>
+
+
+                    <!-- Campo de Ocasión del servicio -->
+                     <div class="form-col-50">
+                        <select class="form-control" required>
+                            <option value="" selected hidden>Selecciona el servicio</option>
+                            <option value="S01">Cumpleaños</option>
+                            <option value="S02">Aniversario</option>
+                            <option value="S03">Cita Especial</option>
+                            <option value="S04">Reunión de Trabajo</option>
+                            <option value="S05">Otro</option>
+                        </select>
+                     </div>
+
+                    <!--Campo mensaje-->
+                    <div class="form-col-100">
+                        <textarea class="form-control fom-noresize" placeholder="Escribe tu mensaje" required cols="40" rows="6"></textarea>
+                    </div>
+
+                    <!-- Campo Captcha-->
+                     <div class="form-col-100">
+                        <input class="form-control" type="text" placeholder="3 + 2 = ?" required>
+                     </div>
+
+                     <!-- Campo Aceptar Terminos y Condiciones-->
+                      <div class="form-col-100">
+                        <input type="checkbox" required>
+                        <label for="">
+                            Declaro expresamente haber leído y aceptado las Políticas de Privacidad.
+                            <a class="form-link" target="_blank" href="https://lynchcafe.pe/politicas-de-privacidad.html">políticas de seguridad y términos de uso</a>.
+                        </label>
+                      </div>
+
+                      <!-- Campo de boton Enviar Mensaje-->
+                        <div class="form-col-50">
+                            <button class="form-submit" type="submit">Enviar Mensaje</button>
+                        </div>    
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    
         <!--EQUIPO-->
         <section id="equipo" class="padding-xl">
             <h2>Nuestro compromiso</h2>
@@ -224,6 +356,7 @@
                 <p><strong>Email:</strong> info@cafeteriagaaa.com</p>
             </div>
         </section>
+
         <!-- Lista de precio -->
         <section id="precio" class="padding-xl">
             <div class="container">
@@ -282,6 +415,7 @@
                 </div>
             </div>
         </section>
+
     </main>
     
 
