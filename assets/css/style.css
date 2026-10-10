@@ -35,7 +35,7 @@ body {
     color: var(--color-principal);
 }
 
-/* Eliminar los espacios inferiores que aparecen debajo del objeto */
+/* Eliminar los espacios inferiores que aparecen debajo del objeto (clase de semana 8)*/
 img,video,iframe{
     display: block;
 }
@@ -106,7 +106,7 @@ img,video,iframe{
     text-align: center;
     padding: 50px 20px;
 }
-
+/* ID de la semana 8 */
 #precio{
     background-color: var(--color-fondo-principal);
     color: var(--color-principal);
@@ -118,7 +118,7 @@ img,video,iframe{
     text-align: center;
     padding: 50px 20px;
 }
-
+/* Termina semana 8 sus ID */
 #pie {
     background-color: var(--gris);
     color: var(--color-fondo-principal);
@@ -191,6 +191,7 @@ img,video,iframe{
     gap: 25px;
     border-radius: 4px;
 }
+/* Transiciones de la barra de navegacion semana 6 */
 .navegacion a {
     display: inline-block;  /*convierte el texto en caja */
     padding: 8px 10px;
@@ -201,6 +202,7 @@ img,video,iframe{
     background-color: var(--naranja);
     color: var(--color-fondo-principal)
 }
+/* Termina semana 6 */
 .titulo_grueso{
     font-weight: 500;
 }
@@ -226,10 +228,15 @@ img,video,iframe{
     justify-content: space-between;
     align-items: center;
 }
-
-.logo-ancho{
+/* Logo semana 6 */
+.logo-ancho {
     width: 100px;
+    height: auto;
 }
+.img-fluid-logo-ancho{
+    width: 110px;
+}
+/* Termina logo semana 6 */
 .seccion_menu {
     margin: 25px auto;
 }
@@ -254,7 +261,7 @@ img,video,iframe{
     width: 250px;
 }
 
-/* Redes sociales en el pie de página */
+/* Redes sociales en el pie de página semana 6 */
 .footer-bar{
     display: flex;
     flex-direction: row;
@@ -266,8 +273,9 @@ img,video,iframe{
     text-decoration: none;
     
 }
+/* Termina semana 6 */
 
-/* Semana 7 contenido */
+/* Semana 8 contenido */
 .tbl-precios {
     width: 100%;
     border-collapse: collapse; /*combina los bordes */
@@ -313,7 +321,7 @@ img,video,iframe{
     align-items: center;
 }
 .promocion-flex article{
-    flex: 1;/* ancho de las columnas */
+    flex: 2;/* ancho de las columnas */
 }
 
 .promocion-flex h3{
@@ -331,6 +339,7 @@ img,video,iframe{
 .promocion-flex a:hover{
     background-color: var(--color-fondo-principal);
 }
+/* Termina semana 8 */
 .form-flex {
     display: flex;
     flex-direction: row;
