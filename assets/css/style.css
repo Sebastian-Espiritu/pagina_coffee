@@ -27,6 +27,10 @@ h3{
     margin-bottom: 5px; 
 }
 /* Selectores de tipo etiqueta HTML */
+html {
+    scroll-behavior: smooth; /* Permite el desplazamiento suave del scroll vertical */
+}
+
 body {
     font-family: var(--fuente1);
     font-size: 14px;
@@ -39,7 +43,9 @@ body {
 img,video,iframe{
     display: block;
 }
-/* Selectores de tipo ID */
+
+
+/* Selectores de tipo ID Semana 9 */
 #top-bar {
     background-color:var(--color-borde-tabla);
     color: var(--color-fondo-principal);
@@ -48,13 +54,16 @@ img,video,iframe{
 
 }
 
+/* cabecera Semana 9 */
 #cabecera {
     position: sticky;
     top: 0px;
     background-color: var(--color-fondo-principal);
     color: var(--color-principal);
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
 }
+/* Termina semana 9 */
 
 #video_portada {
     /* Controlar la posición de las cajas hijo dentro de la caja padre */
@@ -78,6 +87,7 @@ img,video,iframe{
     color: var(--color-fondo-principal);
 }
 
+/* ID de la semana 7 */
 #citas {
     background-color: var(--color-fondo-principal);
     color: var(--color-principal);
@@ -340,6 +350,8 @@ img,video,iframe{
     background-color: var(--color-fondo-principal);
 }
 /* Termina semana 8 */
+
+/* Comienza semana 7 */
 .form-flex {
     display: flex;
     flex-direction: row;
@@ -388,7 +400,9 @@ img,video,iframe{
 .fom-noresize {
     resize: none;
 }
+/* Termina semana 7 */
 
+/* Comienza semana 9 */
 .top-bar-flex {
     display: flex;
     flex-direction: row;
@@ -442,3 +456,24 @@ img,video,iframe{
     padding: 10px 20px;
     margin-top: 20px;
 }
+
+.scroll-up {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: var(--naranja);
+    color: var(--color-fondo-principal);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    border-radius: 50%;
+
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+/*Termina semana 9*/
