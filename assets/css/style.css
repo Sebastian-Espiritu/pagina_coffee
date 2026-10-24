@@ -477,3 +477,56 @@ img,video,iframe{
     z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
 }
 /*Termina semana 9*/
+
+/* Empieza la Semana 11 */
+/* Botón de navegación */
+.navegacion-toggle{
+    font-size: 2rem;/* Aprox. 32px */
+    cursor  :pointer; /*Cursor estilo manito */
+    display: none; /* Oculta el icono en espacios grandes */
+
+}
+.navegacion a[aria-current="page"]{
+    background-color: var(--naranja);
+    color: var(--color-fondo-principal);
+}
+
+.page-title{
+    background-color: var(--naranja02);
+    color: var(--color-fondo-principal);
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-image: 
+        linear-gradient(90deg,rgba(32, 54, 69, 1) 0%, rgba(32, 54, 69, 0.5) 50%),/*Se uso el css gradient generator  */
+        url("../img/capuccino.jpg"); /*Esta para buscar una mejor imagen */
+    background-size: cover;
+    background-position: bottom;
+}
+
+.page-title h1{
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.page-title a{
+    color: var(--color-fondo-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page-title nav{
+    margin-top: 20px;
+}
+
+.clientes-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.clientes-item{
+    border: 1px solid var(--color-principal);
+    padding: 15px;
+    background-color: var(--gris);
+}
+/* Termina semana 11 */

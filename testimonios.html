@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Cafeteria GAAA</title>
+
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!-- Enlazar el HTML con el favicon Semana 9-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico.png" type="image/x-icon">
+</head>
+<!--Finalizado semana 9 -->
+
+<body>
+    <!-- Barra superior (top-bar)  Semana 9-->
+    <header id="top-bar">
+        <div class="container">
+            <!--Flexbox del top-bar -->
+            <div class="top-bar-flex">
+                <!-- Contactos-->
+                <div class="top-contacto">
+
+                    <!--Telefono-->
+                    <a href="tel:+51987654321">
+                        <i class="fa-solid fa-phone"></i>
+                        (+51) 987-654-321
+                    </a>
+
+                    <!--Correo electrónico-->
+                    <a href="mailto:info@cafeteria.com.pe&subject=Necesito información">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@cafeteria.com.pe
+                    </a>
+                </div>
+
+                <!-- Redes sociales-->
+                <div class="top-rs">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <i class="fa-brands fa-tiktok fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--Termina la barra superior Semana 9-->
+
+    <!--ENCABEZADO-->
+    <header id="cabecera" class="row encabezado">
+        <!-- Logo (solo de semana 6)-->
+        <div class="logo-ancho">
+            <a href="index.html" title="Inicio">
+                <img class="img-fluid-logo-ancho" src="./assets/img/logo_coffe_shop.jpg">
+            </a>
+        </div>
+        <!-- Boton de hamburguesa para pantallas moviles (semana 11) -->
+        <div class="navegacion-toggle">
+            <i class="fa-solid fa-bars" title="Menú"></i>
+
+        </div>
+        <nav class="navegacion">
+            <a class="enlace" href="index.html" >Inicio</a>
+            <a class="enlace" href="nosotros.html">Nosotros</a>
+            <a class="enlace" href="menu.html">Menú</a>
+            <a class="enlace" href="testimonios.html" aria-current="page">Testimonios</a>
+            <a class="enlace btn" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!--PAGINA PRINCIPAL-->
+    <main> 
+      <section class="page-title">
+            <div class="container">
+                <h1>Testimonios</h1>
+                <p>Lee lo que dicen nuestros clientes sobre nuestra experiencia</p>
+                <nav>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="index.html" title="Inicio" >Inicio</a> / <a href="testimonios.html" aria-current="page">Testimonios</a>
+                </nav>
+            </div>
+
+        </section>
+        <!-- Testimonios de los clientes -->
+        <section id="testimonios" class="padding-xl">
+            <div class="container">
+                <h2>¿Que opinan nuestros clientes?</h2>
+                <div class="clientes-grid">
+                    <!-- article 1 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 2 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 3 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 4 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 5 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 6 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 7 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 8 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 9 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    <!-- article 10 -->
+                    <article class="clientes-item">
+                        <img src="./assets/img/cheesecake.jpg" class="img-fluid" alt=""><!--Buscar imagen de clientes  -->
+                        <h3>Nombre de cliente</h3>
+                        <p>
+                            <q><i>Los cafes son bueno pero me llega al huevo ver a un rojo con cara de imbecil</i></q>
+                        </p>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Pie de pagina -->
+    <footer class="padding-xs" id="pie">
+        <div class="container">
+            <!-- Alineacion flexible de los elementos -->
+            <div class="footer-bar">
+                <!-- Copyright -->
+                <div>
+                   &copy; 2026 Coffee Shop GA. Todos los derechos reservados. 
+                </div>
+                <!-- Redes sociales  semana 6-->
+                <div class="footer-rs">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <i class="fa-brands fa-tiktok fa-2xl"></i>
+                    </a>
+                </div>
+                <!-- Termina semana 6 -->
+            </div> 
+        </div>
+    </footer>
+
+    <!--Semana 9-->
+    <a class="scroll-up" href="#" title="Volver arriba">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!--Finaliza semana 9-->
+</body>
+</html>
