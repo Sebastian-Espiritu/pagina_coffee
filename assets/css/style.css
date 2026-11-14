@@ -475,6 +475,18 @@ img,video,iframe{
     border-radius: 50%;
 
     z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+}
+
+.scroll-up.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 /*Termina semana 9*/
 
@@ -529,4 +541,118 @@ img,video,iframe{
     padding: 15px;
     background-color: var(--gris);
 }
+
+.clientes-item img{
+    width: 80%;
+    border-radius: 10px;
+    height: auto;
+    margin: 0 auto;
+}
 /* Termina semana 11 */
+
+
+/* Empieza semana 14 */
+.scroll-up[hidden]{
+    display: none; /* alterna la visibilidad del boton */
+}
+
+
+.mapa-fluid{
+    width: 100%;
+
+}
+/* Visor de imagenes */
+
+.abrir-foto {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-texto);
+    font: inherit;
+    cursor: pointer;
+}
+
+.abrir-foto span {
+    text-decoration: underline;
+}
+/* Tamaño y color de fondo del cuadro de dialogo */
+#visor-fotos {
+    box-sizing: border-box;
+    width: min(90vw, 520px);
+    max-height: 90vh;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#visor-fotos::backdrop {
+    background: rgb(0 0 0 / 65%);
+}
+/* Proporciones para el tamaño de la foto */
+#visor-fotos h2 {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+#visor-imagen {
+    display: block;
+    width: 100%;
+    max-height: 55vh;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+/* Contenedor principal en fila usando Flexbox */
+/* Fila personalizada para los elementos de contacto */
+.contacto-grid-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo propio para cada tarjeta de contacto */
+.tarjeta-contacto-item {
+    background-color: var(--color-fondo-principal);
+    border-radius: 6px;
+    padding: 20px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 260px;
+    text-align: center;
+    color: var(--color-principal);
+}
+
+/* Cuadrado del icono centrado */
+.tarjeta-contacto-item .info-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--naranja02);
+    color: var(--color-fondo-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+.tarjeta-contacto-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--color-principal);
+}
+
+.tarjeta-contacto-item p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--color-principal);
+}
