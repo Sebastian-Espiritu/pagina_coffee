@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 <!-- Enlazar el HTML con el favicon Semana 9-->
-    <link rel="shortcut icon" href="assets/img/favicon.ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <!--Finalizado semana 9 -->
 
@@ -34,7 +34,7 @@
                     </a>
 
                     <!--Correo electrónico-->
-                    <a href="mailto:info@cafeteria.com.pe&subject=Necesito información">
+                    <a href="mailto:info@cafeteria.com.pe?subject=Necesito información">
                         <i class="fa-solid fa-envelope"></i>
                         info@cafeteria.com.pe
                     </a>
@@ -69,10 +69,10 @@
             </a>
         </div>
         <!-- Boton de hamburguesa para pantallas moviles (semana 11) -->
-        <div class="navegacion-toggle">
+        <button class="navegacion-toggle" aria-expanded="false">
             <i class="fa-solid fa-bars" title="Menú"></i>
+        </button>
 
-        </div>
         <nav class="navegacion">
             <a class="enlace" href="index.html" >Inicio</a>
             <a class="enlace" href="nosotros.html" aria-current="page">Nosotros</a>
@@ -94,6 +94,61 @@
                 </nav>
             </div>
 
+        </section>
+        <section class="padding-xl">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Aroma Místico Café nació con la idea de ofrecer una experiencia
+                    única para los amantes del café, combinando bebidas de calidad,
+                    postres artesanales y un ambiente acogedor para toda la familia.
+                </p>
+            </div>
+        </section>
+        <section id="mision-vision" class="padding-xl">
+            <div class="container">
+                <h2>Nuestra Filosofía</h2>
+                <div class="row">
+                    <div class="fondo_contacto filosofia-box">
+                        <h3>Misión</h3>
+                        <p>
+                            Brindar productos de alta calidad y una atención cercana que
+                            convierta cada visita en una experiencia memorable. Buscamos
+                            ofrecer un ambiente cómodo y acogedor donde nuestros clientes
+                            puedan disfrutar de bebidas, postres y momentos especiales
+                            acompañados de un servicio amable y profesional.
+                        </p>
+                    </div>
+
+                    <div class="fondo_contacto filosofia-box">
+                        <h3>Visión</h3>
+                        <p>
+                            Ser una cafetería reconocida por la excelencia de nuestros
+                            productos, nuestro servicio y el ambiente que ofrecemos.
+                            Aspiramos a convertirnos en el lugar preferido para compartir,
+                            trabajar y disfrutar del mejor café, innovando constantemente
+                            para superar las expectativas de nuestros visitantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="equipo" class="padding-xl">
+            <h2>Nuestros Valores</h2>
+            <div class="row container">
+                <div>
+                    <h3>Calidad</h3>
+                    <p>Seleccionamos cuidadosamente nuestros productos.</p>
+                </div>
+                <div>
+                    <h3>Compromiso</h3>
+                    <p>Buscamos siempre superar las expectativas del cliente.</p>
+                </div>
+                <div>
+                    <h3>Innovación</h3>
+                    <p>Incorporamos nuevas ideas y experiencias para nuestros visitantes.</p>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -132,5 +187,7 @@
         <i class="fa-solid fa-angle-up"></i>
     </a>
     <!--Finaliza semana 9-->
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

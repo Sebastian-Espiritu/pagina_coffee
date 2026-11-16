@@ -21,7 +21,14 @@
     margin-top: 0px; 
     margin-bottom: 5px;
 }
+h2{
+    font-size: 43px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
 h3{
+    font-size: 24px;
     font-weight: 500;
     margin-top: 0px; 
     margin-bottom: 5px; 
@@ -161,19 +168,20 @@ img,video,iframe{
 .row{
     display: flex;  /* Activa flexbox */
     flex-direction: row; /* Orientación en fila */
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
 /*ajuste del ancho al tamaño de la caja padre*/
-.img-fluid .img_menu {
+.img-fluid.img_menu {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.img-fluid .inicio_img {
-    width: 60%;
+.img-fluid.inicio_img {
+    width: 100%;
     height: auto;
     border-radius: 4px;
 }
@@ -483,11 +491,6 @@ img,video,iframe{
     transition: all 0.3s ease;
 }
 
-.scroll-up.visible {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
 /*Termina semana 9*/
 
 /* Empieza la Semana 11 */
@@ -501,6 +504,29 @@ img,video,iframe{
 .navegacion a[aria-current="page"]{
     background-color: var(--naranja);
     color: var(--color-fondo-principal);
+}
+@media (max-width:1200px){
+    .container{
+        max-width: 80%;
+    }
+}
+@media (max-width: 992px){
+
+    .navegacion-toggle{
+        display: block;
+    }
+    .navegacion{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .navegacion.active{
+        display: flex;
+    }
+    .encabezado{
+        flex-wrap: wrap;
+    }
 }
 
 .page-title{
@@ -552,6 +578,11 @@ img,video,iframe{
 
 
 /* Empieza semana 14 */
+.scroll-up:not([hidden]){
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 .scroll-up[hidden]{
     display: none; /* alterna la visibilidad del boton */
 }
@@ -642,17 +673,116 @@ img,video,iframe{
     border-radius: 6px;
     font-size: 24px;
 }
-
 .tarjeta-contacto-item h3 {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 8px;
     color: var(--color-principal);
 }
-
 .tarjeta-contacto-item p {
     font-size: 13px;
     line-height: 1.6;
     margin: 0;
     color: var(--color-principal);
+}
+#mision-vision{
+    background-color: var(--naranja02);
+    text-align: center;
+}
+#mision-vision .fondo_contacto{
+    padding: 25px;
+}
+.filosofia-box{
+    max-width: 80%;
+    min-height: 220px;
+    padding: 30px;
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 90%;
+    }
+    .footer-bar{
+        flex-direction: column;
+        gap: 15px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    .top-bar-flex{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .top-contacto{
+        align-items: center;
+    }
+    .top-rs{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .fondo_contacto{
+        max-width: 90%;
+    }
+    .promocion-flex{
+        flex-direction: column;
+    }
+    .portada-texto{
+        width: 61%;
+        left: 25px;
+        right: auto;
+    }
+    .portada-texto h1{
+        font-size: 25px;
+        margin: 0 0 10px 0;
+    }
+    .portada-texto p{
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+    .portada-texto a{
+        margin-top: 5px;
+    }
+    #testimonios .container{
+        max-width: 70%;
+    }
+    #testimonios .clientes-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:480px){
+    h2{
+        font-size: 30px;
+    }
+    .portada-texto{
+        width: 90%;
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+    .portada-texto p{
+        display:none;
+    }
+    .top-contacto{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #testimonios .container{
+        max-width: 80%;
+    }
+}
+@media (max-width:360px){
+    h2{
+        font-size: 26px;
+    }
+    .encabezado{
+        padding: 10px;
+    }
+    .logo-ancho{
+        width: 80px;
+    }
+    .container{
+        max-width:100%;
+    }
 }

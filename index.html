@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 <!-- Enlazar el HTML con el favicon Semana 9-->
-    <link rel="shortcut icon" href="assets/img/favicon.ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <!--Finalizado semana 9 -->
 
@@ -34,7 +34,7 @@
                     </a>
 
                     <!--Correo electrónico-->
-                    <a href="mailto:info@cafeteria.com.pe&subject=Necesito información">
+                    <a href="mailto:info@cafeteria.com.pe?subject=Necesito información">
                         <i class="fa-solid fa-envelope"></i>
                         info@cafeteria.com.pe
                     </a>
@@ -69,10 +69,9 @@
             </a>
         </div>
         <!-- Boton de hamburguesa para pantallas moviles (semana 11) -->
-        <div class="navegacion-toggle">
+        <button class="navegacion-toggle" aria-expanded="false">
             <i class="fa-solid fa-bars" title="Menú"></i>
-
-        </div>
+        </button>
         <nav class="navegacion">
             <a class="enlace" href="index.html" aria-current="page">Inicio</a>
             <a class="enlace" href="nosotros.html">Nosotros</a>
@@ -125,7 +124,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 1 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/cafe_americano.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/cafe_americano.jpg" alt="Cafe Americano">
                             <h3>Cafe americano</h3>
                             <p>Café preparado con agua caliente y espresso</p>
                         </div>
@@ -135,7 +134,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 2 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/cafe_con_leche.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/cafe_con_leche.jpg" alt="Cafe Leche">
                             <h3>Cafe con leche</h3>
                             <p>Café preparado con leche caliente y espresso</p>
                         </div>
@@ -145,7 +144,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 3 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/capuccino.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/capuccino.jpg" alt="Capuccino">
                             <h3>Capuccino</h3>
                             <p>Café preparado con leche caliente, espresso y espuma de leche</p>
                         </div>
@@ -155,7 +154,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 4 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/espresso.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/espresso.jpg" alt="Expresso">
                             <h3>Espresso</h3>
                             <p>Café preparado con agua caliente y espresso</p>
                         </div>
@@ -167,7 +166,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 5 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/volcan_de_chocolate.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/volcan_de_chocolate.jpg" alt="Volcan Chocolate">
                             <h3>Volcan de Chocolate</h3>
                             <p>Torta de chocolate con relleno de crema y caramelo</p>
                         </div>
@@ -177,7 +176,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 6 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/cheesecake.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/cheesecake.jpg" alt="Cheesecake">
                             <h3>Cheesecake</h3>
                             <p>Torta de queso con base de galleta</p>
                         </div>
@@ -187,7 +186,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 7 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/brownie.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/brownie.jpg" alt="Brownie">
                             <h3>Brownie</h3>
                             <p>Torta de chocolate con nueces y caramelo</p>
                         </div>
@@ -199,7 +198,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 8 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/sandwich_jamon_queso.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/sandwich_jamon_queso.jpg" alt="Sandwich Jamon y Queso">
                             <h3>Sándwich de Jamón y Queso</h3>
                             <p>Sándwich de jamón y queso con pan integral</p>
                         </div>
@@ -209,7 +208,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 9 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/sandwich_de_pollo.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/sandwich_de_pollo.jpg" alt="Sandwich de Pollo">
                             <h3>Sándwich de Pollo</h3>
                             <p>Sándwich de pollo a la parrilla con vegetales</p>
                         </div>
@@ -219,7 +218,7 @@
                     <div class="tarjeta_menu">
                         <!-- Tarjeta 10 -->
                         <div>
-                            <img class="img-fluid img_menu" src="./assets/img/sandwich_de_atun.jpg" alt="">
+                            <img class="img-fluid img_menu" src="./assets/img/sandwich_de_atun.jpg" alt="Sandwich de Atun">
                             <h3>Sándwich de Atún</h3>
                             <p>Sándwich de atún con mayonesa y lechuga</p>
                         </div>
@@ -267,7 +266,7 @@
 
                     <!-- Campo de Número de Personas -->
                     <div class="form-col-50">
-                        <input class="form-control" type="" placeholder="Número de Personas" required>
+                        <input class="form-control" type="number" min="1" placeholder="Número de Personas" required>
                     </div>
 
 
@@ -314,8 +313,6 @@
     </section>
 <!--Termina el avance de la semana 7-->
 
-
-    </main>
         <!--EQUIPO-->
         <section id="equipo" class="padding-xl">
             <h2>Nuestro compromiso</h2>
@@ -373,42 +370,63 @@
         <!-- Lista de precio Semana 8-->
         <section id="precio" class="padding-xl">
             <div class="container">
-                <h2>Lista de Precios del servicios</h2>
-                <!-- Objeto de tabla -->
+
+                <h2>Lista de Precios</h2>
+
                 <table class="tbl-precios">
-                    <!-- Cabecera de la tabla -->
+
                     <thead>
                         <tr>
                             <th>Producto</th>
                             <th>Descripción</th>
-                            <th>Precio <sup>*</sup></th>
+                            <th>Precio</th>
                         </tr>
                     </thead>
-                    <!-- Cuerpo de la tabla -->
+
                     <tbody>
+
                         <tr>
                             <td>Café Americano</td>
-                            <td>Café preparado con agua caliente y espresso</td>
-                            <td>$2.50</td>
+                            <td>Espresso y agua caliente</td>
+                            <td>S/ 8.00</td>
                         </tr>
+
                         <tr>
                             <td>Café con Leche</td>
-                            <td>Café preparado con leche caliente y espresso</td>
-                            <td>$3.00</td>
+                            <td>Espresso con leche caliente</td>
+                            <td>S/ 10.00</td>
                         </tr>
+
                         <tr>
-                            <td>Café Latte</td>
-                            <td>Café preparado con leche vaporizada y espresso</td>
-                            <td>$3.50</td>
+                            <td>Latte</td>
+                            <td>Espresso con leche vaporizada</td>
+                            <td>S/ 11.00</td>
                         </tr>
+
+                        <tr>
+                            <td>Capuccino</td>
+                            <td>Espresso con espuma de leche</td>
+                            <td>S/ 12.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Espresso</td>
+                            <td>Café concentrado tradicional</td>
+                            <td>S/ 7.00</td>
+                        </tr>
+
                     </tbody>
-                    <!-- Pie de la tabla -->
+
                     <tfoot>
                         <tr>
-                            <td colspan="3">(*) Precio sujeto a cambios sin previo aviso</td>
+                            <td colspan="3">
+                                (*) Precios referenciales sujetos a cambios.
+                            </td>
                         </tr>
                     </tfoot>
+
                 </table>
+
             </div>
         </section>
         <!-- Video promocional  semana 8-->
@@ -466,5 +484,7 @@
         <i class="fa-solid fa-angle-up"></i>
     </a>
     <!--Finaliza semana 9-->
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

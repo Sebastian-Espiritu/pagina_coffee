@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 <!-- Enlazar el HTML con el favicon Semana 9-->
-    <link rel="shortcut icon" href="assets/img/favicon.ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <!--Finalizado semana 9 -->
 
@@ -34,7 +34,7 @@
                     </a>
 
                     <!--Correo electrónico-->
-                    <a href="mailto:info@cafeteria.com.pe&subject=Necesito información">
+                    <a href="mailto:info@cafeteria.com.pe?subject=Necesito información">
                         <i class="fa-solid fa-envelope"></i>
                         info@cafeteria.com.pe
                     </a>
@@ -69,10 +69,10 @@
             </a>
         </div>
         <!-- Boton de hamburguesa para pantallas moviles (semana 11) -->
-        <div class="navegacion-toggle">
+        <button class="navegacion-toggle" aria-expanded="false">
             <i class="fa-solid fa-bars" title="Menú"></i>
+        </button>
 
-        </div>
         <nav class="navegacion">
             <a class="enlace" href="index.html" >Inicio</a>
             <a class="enlace" href="nosotros.html">Nosotros</a>
@@ -131,7 +131,7 @@
 
                     <!-- Campo de Número de Personas -->
                     <div class="form-col-50">
-                        <input class="form-control" type="" placeholder="Número de Personas" required>
+                        <input class="form-control" type="number" min="1" placeholder="Número de Personas" required>
                     </div>
 
 
@@ -263,5 +263,7 @@
         <i class="fa-solid fa-angle-up"></i>
     </a>
     <!--Finaliza semana 9-->
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
