@@ -60,3 +60,4 @@ if (visor) {
         });
     }
 } //no se porque no ejecuta el visor de fotos, no se si es por el querySelector o por el showModal
+
