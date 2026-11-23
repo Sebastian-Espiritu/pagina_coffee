@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Cafeteria GAAA</title>
 
+    <!-- Enlazar el HTML con la hoja de estilos externa-->
+     <link rel = "stylesheet" href = "./assets/css/carrusel.css">
+
     <!-- Enlace a Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
@@ -84,9 +87,9 @@
     <!--PAGINA PRINCIPAL-->
     <main>
         <!-- Video de portada -->
-        <section id="video_portada">
+        <!--<section id="video_portada"> -->
             <!-- Objeto video -->
-            <video class="video-fluid" autoplay muted loop> 
+            <!--<video class="video-fluid" autoplay muted loop> 
                 <source src="./assets/video/arte_cappuccino.mp4" type="video/mp4">
             </video>
 
@@ -96,7 +99,59 @@
                 <a href="#">Reserva tu mesa</a>
 
             </div>
+        </section> -->
+
+        <!-- Objeto carrusel -->
+        <section id="carrusel">
+
+            <!-- Diapositiva 1 -->
+            <div class="diapositiva activa">
+                <img src="assets/img/slide1.jpg" alt="">
+                <div class="carrusel-texto">
+                    <h2>Cuidamos tu salud visual</h2>
+                    <p>Especialistas y tecnología al servicio de tus ojos.</p>
+                    <a href="contactanos.html">Reserva tu cita</a>
+                </div>
+            </div>
+
+            <!-- Diapositiva 2 -->
+            <div class="diapositiva">
+                <img src="assets/img/slide2.jpg" alt="">
+                <div class="carrusel-texto">
+                    <h2>Lentes para tu día a día</h2>
+                    <p>Recibe orientación para elegir lentes según tus necesidades.</p>
+                    <a href="servicios.html">Conoce nuestros servicios</a>
+                </div>
+            </div>
+
+            <!-- Diapositiva 3 -->
+            <div class="diapositiva">
+                <img src="assets/img/slide3.jpg" alt="">
+                <div class="carrusel-texto">
+                    <h2>Evalúa tu visión</h2>
+                    <p>Programa una consulta para revisar tu salud visual.</p>
+                    <a href="contactanos.html">Solicita una evaluación</a>
+                </div>
+            </div>
+
+            <!-- Boton de desplazamiento "Anterior"-->
+            <button type="button" id="carrusel-anterior" class="carrusel-flecha">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <!-- Boton de desplazamiento "Siguiente"-->
+            <button type="button" id="carrusel-siguiente" class="carrusel-flecha">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Barra de indicadores (puntos) de paginacion-->
+            <div class="carrusel-indicadores">
+                <button type="button" class="carrusel-punto activo"></button>
+                <button type="button" class="carrusel-punto"></button>
+                <button type="button" class="carrusel-punto"></button>
+            </div>
         </section>
+
 
         <!--INICIO-->
         <section id="inicio">
@@ -111,6 +166,8 @@
             <h2>Nosotros</h2>
             <p>Somos una cafetería dedicada a ofrecer café de calidad, postres y diferentes opciones para nuestros clientes.</p>
             <p>Nuestro objetivo es crear un espacio comodo y agradable donde puedas disfrutar de tus bebidas favoritas.</p>
+            <video class="video-fluid" autoplay muted loop> 
+                <source src="./assets/video/arte_cappuccino.mp4" type="video/mp4">
         </section>
         <!--MENÚ-->
         <section id="servicios_menu" class="padding-xl">
@@ -485,6 +542,8 @@
     </a>
     <!--Finaliza semana 9-->
 
+    <!-- Enlazar con la libreria principal de javascript -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/carrusel.js"></script>
 </body>
 </html>
